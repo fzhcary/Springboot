@@ -1,6 +1,7 @@
 package com.example.demo3.model;
 
-import javax.persistence.*;
+//import javax.persistence.*;  After Spring Boot 3, javax replaced with jakarta
+import jakarta.persistence.*;
 
 //This class uses JPA annotations such as @Entity, @Table, @Id, @GeneratedValue, and @Column
 //to define the mapping between the Java object and the database table.
