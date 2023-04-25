@@ -68,3 +68,15 @@ just right click the application and run
 -   `src/main/resources` contains application configuration files, such as `application.properties` or `application.yml`.
 -   `src/test/java` contains the unit and integration tests.
 -   `pom.xml` is the Maven build file that contains project dependencies and build configurations.
+
+## Tests
+curl script
+```
+curl --location 'http://localhost:8080/person/add' \
+--header 'Content-Type: application/json' \
+--data '{"firstName":"John","lastName":"Doe","age":30}'
+
+curl --location --request GET 'http://localhost:8080/person/2' \
+--header 'Content-Type: application/json' \
+--data '{"firstName":"John","lastName":"Doe","age":30}'
+```
