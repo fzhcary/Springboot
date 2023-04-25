@@ -76,7 +76,5 @@ curl --location 'http://localhost:8080/person/add' \
 --header 'Content-Type: application/json' \
 --data '{"firstName":"John","lastName":"Doe","age":30}'
 
-curl --location --request GET 'http://localhost:8080/person/2' \
---header 'Content-Type: application/json' \
---data '{"firstName":"John","lastName":"Doe","age":30}'
+curl --location 'http://localhost:8080/person/1'
 ```
